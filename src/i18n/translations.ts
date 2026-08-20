@@ -20,12 +20,13 @@ export const translations = {
     lighting: 'Iluminación',
     capture: 'Capturar',
     export: 'Exportar',
+    nomadButton: 'Nomad Sculpt (iPad)',
     fullscreen: 'Pantalla completa',
     exitFullscreen: 'Salir de pantalla completa',
     
     // Gallery
     materialCatalog: 'Catálogo de Materiales',
-    searchPlaceholder: 'Buscar materiales (ladrillo, madera...)',
+    searchPlaceholder: 'Buscar materiales (ladrillo, madera, sci-fi...)',
     favoritesTooltip: 'Ver solo favoritos',
     noMaterialsFound: 'No se encontraron materiales',
     glassBadge: 'Cristal',
@@ -39,6 +40,10 @@ export const translations = {
     catWood: 'Maderas',
     catRoofing: 'Tejados y Cubiertas',
     catPlaster: 'Yesos y Enlucidos',
+    catTiles: 'Azulejos y Cerámica',
+    catGround: 'Suelo y Naturaleza',
+    catFabric: 'Telas y Cuero',
+    catSciFi: 'Sci-Fi y Cyberpunk',
     catOther: 'Otros',
     
     // Properties Panel
@@ -76,6 +81,7 @@ export const translations = {
     colorSpaceLinear: 'Linear (Non-Color)',
     mapNotAvailable: 'Mapa no disponible para este material',
     openFullSize: 'Abrir mapa en tamaño completo',
+    sendAlphaToNomad: 'Enviar como Alpha a Nomad Sculpt',
     
     // Environment & Lighting
     envLightingTitle: 'Iluminación y Entorno',
@@ -110,7 +116,7 @@ export const translations = {
     viewIso: 'ISO',
     viewFront: 'Frontal',
     viewTop: 'Superior',
-    loading4K: 'Cargando Texturas 4K',
+    loading4K: 'Cargando Texturas',
     loadingSubtitle: 'Preparando mapas PBR',
     hintRotate: 'Click + Arrastrar: Rotar | Click Derecho: Pan | Rueda: Zoom',
     wireframeActive: 'Wireframe Activo',
@@ -122,11 +128,28 @@ export const translations = {
     tabUnreal: '🔵 Unreal Engine 5',
     tabUnity: '⚪ Unity (URP)',
     tabThree: '🔺 Three.js',
+    tabNomad: '📱 Nomad Sculpt (iPad)',
     tabPaths: '📁 Rutas de Archivos',
     copied: '¡Copiado!',
     copyButton: 'Copiar',
     close: 'Cerrar',
     pbrMapsCount: 'mapas PBR',
+    
+    // Nomad Sculpt iPad Modal / Tab
+    nomadTitle: 'Enviar a Nomad Sculpt (iPad)',
+    nomadSubtitle: 'Guarda alphas, texturas o modelos 3D con PBR directamente en Nomad Sculpt',
+    nomadAlphaButton: 'Exportar Alpha / Estampa (Height PNG)',
+    nomadAlphaDesc: 'Mapa de desplazamiento en blanco y negro para esculpir con brocha en Nomad',
+    nomadGlbButton: 'Abrir Modelo 3D (.GLB PBR) en Nomad',
+    nomadGlbDesc: 'Genera el modelo 3D con texturas PBR y lo abre directamente en Nomad Sculpt',
+    nomadTexturesButton: 'Descargar Pack de Texturas (ZIP / PNG)',
+    nomadTexturesDesc: 'Descarga los mapas PBR para importarlos en materiales de Nomad',
+    nomadGuideTitle: '📖 Cómo usar en tu iPad con Nomad Sculpt',
+    nomadStep1: '1. En Safari en tu iPad, toca el botón de arriba.',
+    nomadStep2: '2. En el menú "Compartir" de iOS, selecciona "Nomad Sculpt" (para abrir el .GLB) o "Guardar en Archivos".',
+    nomadStep3: '3. Para Alphas de brocha: Guarda en "En mi iPad > Nomad > alphas".',
+    nomadStep4: '4. ¡Listo! Abre Nomad Sculpt y aparecerá automáticamente en tu menú de Alphas.',
+    nomadShareSuccess: '¡Archivo preparado y compartido!',
   },
   en: {
     appTitle: 'PBR Studio 3D',
@@ -147,12 +170,13 @@ export const translations = {
     lighting: 'Lighting',
     capture: 'Screenshot',
     export: 'Export',
+    nomadButton: 'Nomad Sculpt (iPad)',
     fullscreen: 'Fullscreen',
     exitFullscreen: 'Exit Fullscreen',
     
     // Gallery
     materialCatalog: 'Material Catalog',
-    searchPlaceholder: 'Search materials (brick, wood...)',
+    searchPlaceholder: 'Search materials (brick, wood, sci-fi...)',
     favoritesTooltip: 'Favorites only',
     noMaterialsFound: 'No materials found',
     glassBadge: 'Glass',
@@ -166,6 +190,10 @@ export const translations = {
     catWood: 'Wood & Timber',
     catRoofing: 'Roofing & Tiles',
     catPlaster: 'Plaster & Walls',
+    catTiles: 'Tiles & Ceramics',
+    catGround: 'Ground & Nature',
+    catFabric: 'Fabric & Leather',
+    catSciFi: 'Sci-Fi & Cyberpunk',
     catOther: 'Other',
     
     // Properties Panel
@@ -203,6 +231,7 @@ export const translations = {
     colorSpaceLinear: 'Linear (Non-Color)',
     mapNotAvailable: 'Map not available for this material',
     openFullSize: 'Open full resolution map',
+    sendAlphaToNomad: 'Send as Alpha to Nomad Sculpt',
     
     // Environment & Lighting
     envLightingTitle: 'Lighting & Environment',
@@ -237,7 +266,7 @@ export const translations = {
     viewIso: 'ISO',
     viewFront: 'Front',
     viewTop: 'Top',
-    loading4K: 'Loading 4K Textures',
+    loading4K: 'Loading Textures',
     loadingSubtitle: 'Preparing PBR texture maps',
     hintRotate: 'Click + Drag: Rotate | Right Click: Pan | Wheel: Zoom',
     wireframeActive: 'Wireframe Active',
@@ -249,10 +278,27 @@ export const translations = {
     tabUnreal: '🔵 Unreal Engine 5',
     tabUnity: '⚪ Unity (URP)',
     tabThree: '🔺 Three.js',
+    tabNomad: '📱 Nomad Sculpt (iPad)',
     tabPaths: '📁 File Paths',
     copied: 'Copied!',
     copyButton: 'Copy',
     close: 'Close',
     pbrMapsCount: 'PBR maps',
+    
+    // Nomad Sculpt iPad Modal / Tab
+    nomadTitle: 'Send to Nomad Sculpt (iPad)',
+    nomadSubtitle: 'Save alphas, textures, or 3D PBR models directly into Nomad Sculpt',
+    nomadAlphaButton: 'Export Alpha / Stamp (Height PNG)',
+    nomadAlphaDesc: 'Black & white displacement map formatted for brush sculpting in Nomad',
+    nomadGlbButton: 'Open 3D Model (.GLB PBR) in Nomad',
+    nomadGlbDesc: 'Generates a 3D model with embedded PBR textures that opens directly in Nomad Sculpt',
+    nomadTexturesButton: 'Download Texture Pack (ZIP / PNG)',
+    nomadTexturesDesc: 'Download PBR texture maps to import into Nomad materials',
+    nomadGuideTitle: '📖 How to use on your iPad with Nomad Sculpt',
+    nomadStep1: '1. In Safari on your iPad, tap the export button above.',
+    nomadStep2: '2. In the iOS "Share" menu, select "Nomad Sculpt" (to open .GLB) or "Save to Files".',
+    nomadStep3: '3. For Brush Alphas: Save to "On My iPad > Nomad > alphas".',
+    nomadStep4: '4. Done! Open Nomad Sculpt and it will automatically appear in your Alpha tool list.',
+    nomadShareSuccess: 'File prepared and shared!',
   }
 };

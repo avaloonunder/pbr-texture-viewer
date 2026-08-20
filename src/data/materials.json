@@ -1,9 +1,15 @@
 {
-  "generatedAt": "2026-08-20T07:31:09.956Z",
-  "totalMaterials": 14,
-  "totalFiles": 67,
+  "generatedAt": "2026-08-20T08:53:33.129Z",
+  "totalMaterials": 25,
+  "totalFiles": 119,
   "categories": [
     "Bricks & Masonry",
+    "Fabric & Leather",
+    "Ground & Nature",
+    "Metals",
+    "Sci-Fi & Tech",
+    "Stone & Concrete",
+    "Tiles & Ceramics",
     "Wood & Timber"
   ],
   "materials": [
@@ -48,6 +54,231 @@
         "roughness": 2172735
       },
       "totalSizeBytes": 40213871
+    },
+    {
+      "id": "EXTRA_Concrete019",
+      "name": "Concrete 019 (Architectural Panel)",
+      "category": "Stone & Concrete",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Concrete019_basecolor.png",
+        "height": "assets/textures/EXTRA_Concrete019_height.png",
+        "normal": "assets/textures/EXTRA_Concrete019_normal.png",
+        "roughness": "assets/textures/EXTRA_Concrete019_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 6325821,
+        "height": 7014371,
+        "normal": 23659957,
+        "roughness": 2697586
+      },
+      "totalSizeBytes": 39697735
+    },
+    {
+      "id": "Cyberpunk_HexPlates",
+      "name": "Cyberpunk Hex Plating (Carbon & Titanium)",
+      "category": "Sci-Fi & Tech",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/Cyberpunk_HexPlates_ambientOcclusion.png",
+        "basecolor": "assets/textures/Cyberpunk_HexPlates_basecolor.png",
+        "height": "assets/textures/Cyberpunk_HexPlates_height.png",
+        "metallic": "assets/textures/Cyberpunk_HexPlates_metallic.png",
+        "normal": "assets/textures/Cyberpunk_HexPlates_normal.png",
+        "roughness": "assets/textures/Cyberpunk_HexPlates_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1045637,
+        "basecolor": 5381273,
+        "height": 1935560,
+        "metallic": 1831084,
+        "normal": 5626622,
+        "roughness": 1264167
+      },
+      "totalSizeBytes": 17084343
+    },
+    {
+      "id": "Dragon_ScaleLeather",
+      "name": "Dragon Scale Armor Leather (Armored Hide)",
+      "category": "Fabric & Leather",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/Dragon_ScaleLeather_ambientOcclusion.png",
+        "basecolor": "assets/textures/Dragon_ScaleLeather_basecolor.png",
+        "height": "assets/textures/Dragon_ScaleLeather_height.png",
+        "normal": "assets/textures/Dragon_ScaleLeather_normal.png",
+        "roughness": "assets/textures/Dragon_ScaleLeather_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1091531,
+        "basecolor": 5865492,
+        "height": 1895984,
+        "normal": 5819110,
+        "roughness": 1232640
+      },
+      "totalSizeBytes": 15904757
+    },
+    {
+      "id": "EXTRA_Fabric048",
+      "name": "Fabric 048 (Woven Linen Cloth)",
+      "category": "Fabric & Leather",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_Fabric048_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_Fabric048_basecolor.png",
+        "height": "assets/textures/EXTRA_Fabric048_height.png",
+        "normal": "assets/textures/EXTRA_Fabric048_normal.png",
+        "roughness": "assets/textures/EXTRA_Fabric048_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 2248566,
+        "basecolor": 3287010,
+        "height": 6211351,
+        "normal": 22478414,
+        "roughness": 1792007
+      },
+      "totalSizeBytes": 36017348
+    },
+    {
+      "id": "Fantasy_DungeonStone",
+      "name": "Fantasy Dungeon Flagstone (Castle Floor)",
+      "category": "Bricks & Masonry",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/Fantasy_DungeonStone_ambientOcclusion.png",
+        "basecolor": "assets/textures/Fantasy_DungeonStone_basecolor.png",
+        "height": "assets/textures/Fantasy_DungeonStone_height.png",
+        "normal": "assets/textures/Fantasy_DungeonStone_normal.png",
+        "roughness": "assets/textures/Fantasy_DungeonStone_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1340431,
+        "basecolor": 6110695,
+        "height": 2339854,
+        "normal": 6669743,
+        "roughness": 1496677
+      },
+      "totalSizeBytes": 17957400
+    },
+    {
+      "id": "EXTRA_Ground037",
+      "name": "Ground 037 (Forest Soil & Pebbles)",
+      "category": "Ground & Nature",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_Ground037_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_Ground037_basecolor.png",
+        "height": "assets/textures/EXTRA_Ground037_height.png",
+        "normal": "assets/textures/EXTRA_Ground037_normal.png",
+        "roughness": "assets/textures/EXTRA_Ground037_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1769581,
+        "basecolor": 10683243,
+        "height": 6670586,
+        "normal": 24384109,
+        "roughness": 2916727
+      },
+      "totalSizeBytes": 46424246
+    },
+    {
+      "id": "Kintsugi_GoldMarble",
+      "name": "Kintsugi Black Marble & Gold Veins",
+      "category": "Stone & Concrete",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/Kintsugi_GoldMarble_ambientOcclusion.png",
+        "basecolor": "assets/textures/Kintsugi_GoldMarble_basecolor.png",
+        "height": "assets/textures/Kintsugi_GoldMarble_height.png",
+        "metallic": "assets/textures/Kintsugi_GoldMarble_metallic.png",
+        "normal": "assets/textures/Kintsugi_GoldMarble_normal.png",
+        "roughness": "assets/textures/Kintsugi_GoldMarble_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 933616,
+        "basecolor": 4590399,
+        "height": 1016945,
+        "metallic": 109918,
+        "normal": 2785055,
+        "roughness": 717037
+      },
+      "totalSizeBytes": 10152970
+    },
+    {
+      "id": "EXTRA_Leather026",
+      "name": "Leather 026 (Fine Grain Black Leather)",
+      "category": "Fabric & Leather",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Leather026_basecolor.png",
+        "height": "assets/textures/EXTRA_Leather026_height.png",
+        "normal": "assets/textures/EXTRA_Leather026_normal.png",
+        "roughness": "assets/textures/EXTRA_Leather026_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 2374287,
+        "height": 7702386,
+        "normal": 22173961,
+        "roughness": 2045288
+      },
+      "totalSizeBytes": 34295922
+    },
+    {
+      "id": "EXTRA_Marble012",
+      "name": "Marble 012 (White Carrara Luxury)",
+      "category": "Stone & Concrete",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Marble012_basecolor.png",
+        "height": "assets/textures/EXTRA_Marble012_height.png",
+        "normal": "assets/textures/EXTRA_Marble012_normal.png",
+        "roughness": "assets/textures/EXTRA_Marble012_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 8515096,
+        "height": 7808574,
+        "normal": 14808159,
+        "roughness": 2008206
+      },
+      "totalSizeBytes": 33140035
+    },
+    {
+      "id": "EXTRA_Metal006",
+      "name": "Metal 006 (Brushed Steel Sheet)",
+      "category": "Metals",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Metal006_basecolor.png",
+        "metallic": "assets/textures/EXTRA_Metal006_metallic.png",
+        "normal": "assets/textures/EXTRA_Metal006_normal.png",
+        "roughness": "assets/textures/EXTRA_Metal006_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 2833241,
+        "metallic": 292442,
+        "normal": 6395561,
+        "roughness": 916338
+      },
+      "totalSizeBytes": 10437582
+    },
+    {
+      "id": "EXTRA_Tiles074",
+      "name": "Tiles 074 (Modern Hexagon Ceramic)",
+      "category": "Tiles & Ceramics",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Tiles074_basecolor.png",
+        "height": "assets/textures/EXTRA_Tiles074_height.png",
+        "normal": "assets/textures/EXTRA_Tiles074_normal.png",
+        "roughness": "assets/textures/EXTRA_Tiles074_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 6724682,
+        "height": 5996405,
+        "normal": 12848505,
+        "roughness": 1717299
+      },
+      "totalSizeBytes": 27286891
     },
     {
       "id": "TowerClock_DomeBricks_Parallel",

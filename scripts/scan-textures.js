@@ -19,8 +19,7 @@ if (!fs.existsSync(publicTexturesDir)) {
 
 // Friendly names dictionary for special / extra assets
 const friendlyNames = {
-  'EXTRA_Bricks033': { name: 'Bricks 033 (Red Clay Clean)', category: 'Bricks & Masonry' },
-  'EXTRA_Bricks059': { name: 'Bricks 059 (Weathered Dark)', category: 'Bricks & Masonry' },
+  // Wood & Timber
   'EXTRA_Wood049': { name: 'Wood 049 (Oak Parquet Floor)', category: 'Wood & Timber' },
   'EXTRA_Wood066': { name: 'Wood 066 (Rustic Planks Weathered)', category: 'Wood & Timber' },
   'EXTRA_WoodFloor041': { name: 'Wood Floor 041 (Herringbone Parquet)', category: 'Wood & Timber' },
@@ -28,11 +27,36 @@ const friendlyNames = {
   'TowerClock_WoodFrame': { name: 'Tower Clock Wood Frame (Central Shaft)', category: 'Wood & Timber' },
   'TowerClock_SinglePlank_Isolated': { name: 'Tower Clock Single Plank (Isolated Board)', category: 'Wood & Timber' },
   'TowerClock_SinglePlank_Full': { name: 'Tower Clock Single Plank (Edge-to-Edge)', category: 'Wood & Timber' },
+  
+  // Bricks & Masonry
+  'EXTRA_Bricks033': { name: 'Bricks 033 (Red Clay Clean)', category: 'Bricks & Masonry' },
+  'EXTRA_Bricks059': { name: 'Bricks 059 (Weathered Dark)', category: 'Bricks & Masonry' },
   'TowerClock_DomeStone': { name: 'Tower Clock Dome Stone (Cupola Masonry)', category: 'Bricks & Masonry' },
   'TowerClock_DomeBricks_Parallel': { name: 'Tower Clock Dome Bricks (Parallel Courses)', category: 'Bricks & Masonry' },
   'TowerClock_DomeBricks_Window': { name: 'Tower Clock Dome Bricks (With Circular Window)', category: 'Bricks & Masonry' },
   'TowerClock_Replica_DomeBricks': { name: 'Tower Clock Replica Dome (No Window - Exact Game Art)', category: 'Bricks & Masonry' },
   'TowerClock_Replica_DomeBricks_Window': { name: 'Tower Clock Replica Dome (With Window - Exact Game Art)', category: 'Bricks & Masonry' },
+  
+  // Tiles & Ceramics
+  'EXTRA_Tiles074': { name: 'Tiles 074 (Modern Hexagon Ceramic)', category: 'Tiles & Ceramics' },
+  
+  // Ground & Nature
+  'EXTRA_Ground037': { name: 'Ground 037 (Forest Soil & Pebbles)', category: 'Ground & Nature' },
+  
+  // Metals & Sci-Fi
+  'EXTRA_Metal006': { name: 'Metal 006 (Brushed Steel Sheet)', category: 'Metals' },
+  'Cyberpunk_HexPlates': { name: 'Cyberpunk Hex Plating (Carbon & Titanium)', category: 'Sci-Fi & Tech' },
+  
+  // Stone & Concrete & Luxury
+  'EXTRA_Concrete019': { name: 'Concrete 019 (Architectural Panel)', category: 'Stone & Concrete' },
+  'EXTRA_Marble012': { name: 'Marble 012 (White Carrara Luxury)', category: 'Stone & Concrete' },
+  'Kintsugi_GoldMarble': { name: 'Kintsugi Black Marble & Gold Veins', category: 'Stone & Concrete' },
+  'Fantasy_DungeonStone': { name: 'Fantasy Dungeon Flagstone (Castle Floor)', category: 'Bricks & Masonry' },
+  
+  // Fabrics & Leather
+  'EXTRA_Fabric048': { name: 'Fabric 048 (Woven Linen Cloth)', category: 'Fabric & Leather' },
+  'EXTRA_Leather026': { name: 'Leather 026 (Fine Grain Black Leather)', category: 'Fabric & Leather' },
+  'Dragon_ScaleLeather': { name: 'Dragon Scale Armor Leather (Armored Hide)', category: 'Fabric & Leather' },
 };
 
 function scanTextures() {
@@ -102,18 +126,22 @@ function scanTextures() {
         const lower = materialKey.toLowerCase();
         if (lower.includes('wood') || lower.includes('timber') || lower.includes('bark') || lower.includes('parquet')) {
           category = 'Wood & Timber';
-        } else if (lower.includes('brick')) {
+        } else if (lower.includes('brick') || lower.includes('dungeon')) {
           category = 'Bricks & Masonry';
-        } else if (lower.includes('copper') || lower.includes('metal') || lower.includes('iron') || lower.includes('gold') || lower.includes('silver') || lower.includes('steel')) {
+        } else if (lower.includes('tile')) {
+          category = 'Tiles & Ceramics';
+        } else if (lower.includes('fabric') || lower.includes('leather') || lower.includes('cloth') || lower.includes('scale')) {
+          category = 'Fabric & Leather';
+        } else if (lower.includes('cyber') || lower.includes('hex') || lower.includes('tech') || lower.includes('panel')) {
+          category = 'Sci-Fi & Tech';
+        } else if (lower.includes('ground') || lower.includes('soil') || lower.includes('rock') || lower.includes('grass')) {
+          category = 'Ground & Nature';
+        } else if (lower.includes('copper') || lower.includes('metal') || lower.includes('iron') || lower.includes('steel')) {
           category = 'Metals';
-        } else if (lower.includes('stone') || lower.includes('cobble') || lower.includes('floor')) {
+        } else if (lower.includes('stone') || lower.includes('marble') || lower.includes('concrete') || lower.includes('cobble')) {
           category = 'Stone & Concrete';
         } else if (lower.includes('glass')) {
           category = 'Glass & Crystals';
-        } else if (lower.includes('roof') || lower.includes('slate')) {
-          category = 'Roofing';
-        } else if (lower.includes('plaster')) {
-          category = 'Plaster & Walls';
         }
       }
 
@@ -129,7 +157,6 @@ function scanTextures() {
     }
 
     const mat = materialMap.get(materialKey);
-    // Use relative path so it works in both dev and production (GitHub Pages)
     mat.maps[matchedType] = `assets/textures/${file}`;
     mat.sizes[matchedType] = stats.size;
     mat.totalSizeBytes += stats.size;

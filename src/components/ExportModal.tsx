@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MaterialSet, PBRSettings } from '../types';
+import { MaterialSet, PBRSettings, MeshGeometryType } from '../types';
 import { 
   X, 
   Copy, 
@@ -8,14 +8,23 @@ import {
   FileText, 
   Boxes, 
   Layers, 
-  Share2,
-  ExternalLink
+  Share2, 
+  ExternalLink,
+  Tablet,
+  Stamp,
+  Box,
+  Download,
+  Info,
+  CheckCircle2,
+  Sparkles
 } from 'lucide-react';
 import { useTranslation } from '../i18n/LanguageContext';
+import { exportAlphaForNomad, exportGlbForNomad, exportTextureMapForNomad } from '../utils/nomadExporter';
 
 interface ExportModalProps {
   materialSet: MaterialSet | null;
   pbrSettings: PBRSettings;
+  geometry: MeshGeometryType;
   isOpen: boolean;
   onClose: () => void;
 }
@@ -23,12 +32,15 @@ interface ExportModalProps {
 export const ExportModal: React.FC<ExportModalProps> = ({
   materialSet,
   pbrSettings,
+  geometry,
   isOpen,
   onClose,
 }) => {
   const { t } = useTranslation();
-  const [activeTab, setActiveTab] = useState<'blender' | 'unreal' | 'unity' | 'threejs' | 'paths'>('blender');
+  const [activeTab, setActiveTab] = useState<'blender' | 'unreal' | 'unity' | 'threejs' | 'nomad' | 'paths'>('nomad');
   const [copied, setCopied] = useState<boolean>(false);
+  const [exportLoading, setExportLoading] = useState<string | null>(null);
+  const [exportSuccess, setExportSuccess] = useState<string | null>(null);
 
   if (!isOpen || !materialSet) return null;
 
@@ -36,6 +48,28 @@ export const ExportModal: React.FC<ExportModalProps> = ({
     navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleNomadExport = async (action: 'alpha' | 'glb' | 'textures') => {
+    setExportLoading(action);
+    setExportSuccess(null);
+    try {
+      if (action === 'alpha') {
+        await exportAlphaForNomad(materialSet);
+        setExportSuccess(t.nomadShareSuccess);
+      } else if (action === 'glb') {
+        await exportGlbForNomad(materialSet, pbrSettings, geometry);
+        setExportSuccess(t.nomadShareSuccess);
+      } else if (action === 'textures') {
+        await exportTextureMapForNomad(materialSet, 'basecolor');
+        setExportSuccess(t.nomadShareSuccess);
+      }
+    } catch (err: any) {
+      console.error('Export error:', err);
+    } finally {
+      setExportLoading(null);
+      setTimeout(() => setExportSuccess(null), 3000);
+    }
   };
 
   // Generate Blender Python Script
@@ -216,10 +250,21 @@ Material: ${materialSet.name}
         </div>
 
         {/* Exporter Tabs */}
-        <div className="flex items-center gap-1 px-4 pt-3 border-b border-slate-800 bg-dark-950/50">
+        <div className="flex items-center gap-1 px-4 pt-3 border-b border-slate-800 bg-dark-950/50 overflow-x-auto no-scrollbar">
+          <button
+            onClick={() => setActiveTab('nomad')}
+            className={`px-3 py-2 text-xs font-semibold rounded-t-lg transition-all flex items-center gap-1.5 border-b-2 shrink-0 ${
+              activeTab === 'nomad'
+                ? 'border-indigo-500 text-white bg-dark-900'
+                : 'border-transparent text-slate-400 hover:text-slate-200'
+            }`}
+          >
+            <span>{t.tabNomad}</span>
+          </button>
+
           <button
             onClick={() => setActiveTab('blender')}
-            className={`px-3 py-2 text-xs font-semibold rounded-t-lg transition-all flex items-center gap-1.5 border-b-2 ${
+            className={`px-3 py-2 text-xs font-semibold rounded-t-lg transition-all flex items-center gap-1.5 border-b-2 shrink-0 ${
               activeTab === 'blender'
                 ? 'border-indigo-500 text-white bg-dark-900'
                 : 'border-transparent text-slate-400 hover:text-slate-200'
@@ -230,7 +275,7 @@ Material: ${materialSet.name}
 
           <button
             onClick={() => setActiveTab('unreal')}
-            className={`px-3 py-2 text-xs font-semibold rounded-t-lg transition-all flex items-center gap-1.5 border-b-2 ${
+            className={`px-3 py-2 text-xs font-semibold rounded-t-lg transition-all flex items-center gap-1.5 border-b-2 shrink-0 ${
               activeTab === 'unreal'
                 ? 'border-indigo-500 text-white bg-dark-900'
                 : 'border-transparent text-slate-400 hover:text-slate-200'
@@ -241,7 +286,7 @@ Material: ${materialSet.name}
 
           <button
             onClick={() => setActiveTab('unity')}
-            className={`px-3 py-2 text-xs font-semibold rounded-t-lg transition-all flex items-center gap-1.5 border-b-2 ${
+            className={`px-3 py-2 text-xs font-semibold rounded-t-lg transition-all flex items-center gap-1.5 border-b-2 shrink-0 ${
               activeTab === 'unity'
                 ? 'border-indigo-500 text-white bg-dark-900'
                 : 'border-transparent text-slate-400 hover:text-slate-200'
@@ -252,7 +297,7 @@ Material: ${materialSet.name}
 
           <button
             onClick={() => setActiveTab('threejs')}
-            className={`px-3 py-2 text-xs font-semibold rounded-t-lg transition-all flex items-center gap-1.5 border-b-2 ${
+            className={`px-3 py-2 text-xs font-semibold rounded-t-lg transition-all flex items-center gap-1.5 border-b-2 shrink-0 ${
               activeTab === 'threejs'
                 ? 'border-indigo-500 text-white bg-dark-900'
                 : 'border-transparent text-slate-400 hover:text-slate-200'
@@ -263,7 +308,7 @@ Material: ${materialSet.name}
 
           <button
             onClick={() => setActiveTab('paths')}
-            className={`px-3 py-2 text-xs font-semibold rounded-t-lg transition-all flex items-center gap-1.5 border-b-2 ${
+            className={`px-3 py-2 text-xs font-semibold rounded-t-lg transition-all flex items-center gap-1.5 border-b-2 shrink-0 ${
               activeTab === 'paths'
                 ? 'border-indigo-500 text-white bg-dark-900'
                 : 'border-transparent text-slate-400 hover:text-slate-200'
@@ -273,29 +318,105 @@ Material: ${materialSet.name}
           </button>
         </div>
 
-        {/* Code Content */}
-        <div className="p-4 flex-1 overflow-hidden flex flex-col">
-          <div className="relative flex-1 bg-dark-950 rounded-xl border border-slate-800 p-4 font-mono text-xs text-slate-300 overflow-auto">
-            <pre>{currentCode}</pre>
+        {/* Tab Content */}
+        {activeTab === 'nomad' ? (
+          <div className="p-4 flex-1 overflow-y-auto space-y-4">
+            {exportSuccess && (
+              <div className="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-emerald-400 text-xs flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 shrink-0" />
+                <span>{exportSuccess}</span>
+              </div>
+            )}
 
-            <button
-              onClick={() => handleCopy(currentCode)}
-              className="absolute top-3 right-3 flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-sans font-medium shadow-lg transition-all"
-            >
-              {copied ? (
-                <>
-                  <Check className="w-3.5 h-3.5 text-emerald-300" />
-                  <span>{t.copied}</span>
-                </>
-              ) : (
-                <>
-                  <Copy className="w-3.5 h-3.5" />
-                  <span>{t.copyButton}</span>
-                </>
-              )}
-            </button>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {/* Option 1: Export Alpha / Stamp */}
+              <div className="bg-dark-950 p-4 rounded-xl border border-slate-800 space-y-3 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <Stamp className="w-4 h-4 text-amber-400" />
+                    <h4 className="text-xs font-bold text-white uppercase tracking-wider">
+                      {t.nomadAlphaButton}
+                    </h4>
+                  </div>
+                  <p className="text-xs text-slate-400">
+                    {t.nomadAlphaDesc}
+                  </p>
+                </div>
+
+                <button
+                  onClick={() => handleNomadExport('alpha')}
+                  disabled={exportLoading === 'alpha'}
+                  className="w-full py-2 px-3 bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 rounded-lg text-xs font-semibold transition-all flex items-center justify-center gap-2"
+                >
+                  <Stamp className="w-3.5 h-3.5" />
+                  <span>{exportLoading === 'alpha' ? 'Preparando...' : t.nomadAlphaButton}</span>
+                </button>
+              </div>
+
+              {/* Option 2: Export 3D GLB Model */}
+              <div className="bg-dark-950 p-4 rounded-xl border border-slate-800 space-y-3 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <Box className="w-4 h-4 text-indigo-400" />
+                    <h4 className="text-xs font-bold text-white uppercase tracking-wider">
+                      {t.nomadGlbButton}
+                    </h4>
+                  </div>
+                  <p className="text-xs text-slate-400">
+                    {t.nomadGlbDesc}
+                  </p>
+                </div>
+
+                <button
+                  onClick={() => handleNomadExport('glb')}
+                  disabled={exportLoading === 'glb'}
+                  className="w-full py-2 px-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-xs font-semibold shadow-md transition-all flex items-center justify-center gap-2"
+                >
+                  <Box className="w-3.5 h-3.5" />
+                  <span>{exportLoading === 'glb' ? 'Generando 3D...' : t.nomadGlbButton}</span>
+                </button>
+              </div>
+            </div>
+
+            {/* iPad Guide Accordion */}
+            <div className="bg-dark-950/80 p-4 rounded-xl border border-slate-800/80 space-y-2">
+              <h5 className="text-xs font-bold text-slate-200 flex items-center gap-2">
+                <Tablet className="w-4 h-4 text-indigo-400" />
+                {t.nomadGuideTitle}
+              </h5>
+              <div className="text-xs text-slate-400 space-y-1.5 pl-6 font-sans">
+                <p>{t.nomadStep1}</p>
+                <p>{t.nomadStep2}</p>
+                <p>{t.nomadStep3}</p>
+                <p>{t.nomadStep4}</p>
+              </div>
+            </div>
           </div>
-        </div>
+        ) : (
+          /* Code Content for other tabs */
+          <div className="p-4 flex-1 overflow-hidden flex flex-col">
+            <div className="relative flex-1 bg-dark-950 rounded-xl border border-slate-800 p-4 font-mono text-xs text-slate-300 overflow-auto">
+              <pre>{currentCode}</pre>
+
+              <button
+                onClick={() => handleCopy(currentCode)}
+                className="absolute top-3 right-3 flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-sans font-medium shadow-lg transition-all"
+              >
+                {copied ? (
+                  <>
+                    <Check className="w-3.5 h-3.5 text-emerald-300" />
+                    <span>{t.copied}</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="w-3.5 h-3.5" />
+                    <span>{t.copyButton}</span>
+                  </>
+                )}
+              </button>
+            </div>
+          </div>
+        )}
 
         {/* Modal Footer */}
         <div className="p-3 border-t border-slate-800 bg-dark-950/40 flex items-center justify-between text-xs text-slate-400 px-4">

@@ -9,7 +9,8 @@ import {
   Minimize, 
   Sparkles,
   Sun,
-  Globe
+  Globe,
+  Tablet
 } from 'lucide-react';
 import { MaterialSet, MeshGeometryType } from '../types';
 import { useTranslation } from '../i18n/LanguageContext';
@@ -192,6 +193,15 @@ export const Header: React.FC<HeaderProps> = ({
         >
           <Camera className="w-3.5 h-3.5 text-indigo-400" />
           <span className="hidden md:inline">{t.capture}</span>
+        </button>
+
+        <button
+          onClick={onOpenExport}
+          title={t.nomadButton}
+          className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 shadow-sm transition-all"
+        >
+          <Tablet className="w-3.5 h-3.5" />
+          <span className="hidden lg:inline">Nomad Sculpt</span>
         </button>
 
         <button

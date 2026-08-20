@@ -224,6 +224,7 @@ export const App: React.FC = () => {
       <ExportModal
         materialSet={currentMaterial}
         pbrSettings={pbrSettings}
+        geometry={geometry}
         isOpen={isExportModalOpen}
         onClose={() => setIsExportModalOpen(false)}
       />

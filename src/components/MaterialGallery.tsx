@@ -59,6 +59,10 @@ export const MaterialGallery: React.FC<MaterialGalleryProps> = ({
       case 'Wood & Timber': return t.catWood;
       case 'Roofing': return t.catRoofing;
       case 'Plaster & Walls': return t.catPlaster;
+      case 'Tiles & Ceramics': return t.catTiles;
+      case 'Ground & Nature': return t.catGround;
+      case 'Fabric & Leather': return t.catFabric;
+      case 'Sci-Fi & Tech': return t.catSciFi;
       default: return cat;
     }
   };

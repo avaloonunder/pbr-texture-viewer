@@ -13,9 +13,12 @@ import {
   Eye, 
   Sliders,
   Split,
-  FileImage
+  FileImage,
+  Tablet,
+  Stamp
 } from 'lucide-react';
 import { useTranslation } from '../i18n/LanguageContext';
+import { exportAlphaForNomad, exportTextureMapForNomad } from '../utils/nomadExporter';
 
 interface MapInspector2DProps {
   materialSet: MaterialSet | null;
@@ -341,6 +344,21 @@ export const MapInspector2D: React.FC<MapInspector2DProps> = ({ materialSet }) =
                 {selectedMapType === 'basecolor' ? t.colorSpaceSRGB : t.colorSpaceLinear}
               </span>
             </div>
+
+            <button
+              onClick={() => {
+                if (selectedMapType === 'height') {
+                  exportAlphaForNomad(materialSet);
+                } else {
+                  exportTextureMapForNomad(materialSet, selectedMapType);
+                }
+              }}
+              title={t.sendAlphaToNomad}
+              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-300 text-xs font-medium backdrop-blur-md transition-all"
+            >
+              <Tablet className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Nomad Sculpt</span>
+            </button>
 
             <a
               href={currentMapUrl}

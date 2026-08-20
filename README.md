@@ -2,7 +2,7 @@
 
 [![Deploy to GitHub Pages](https://github.com/avaloonunder/pbr-texture-viewer/actions/workflows/deploy.yml/badge.svg)](https://github.com/avaloonunder/pbr-texture-viewer/actions/workflows/deploy.yml)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-indigo?style=flat&logo=github)](https://avaloonunder.github.io/pbr-texture-viewer/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: CC0 & MIT](https://img.shields.io/badge/License-CC0%20%26%20MIT-blue.svg)](LICENSE)
 
 An interactive, high-performance web-based **3D PBR (Physically Based Rendering) Material & Texture Viewer** built with **Three.js**, **React 19**, **TypeScript**, and **Tailwind CSS**.
 
@@ -21,7 +21,7 @@ An interactive, high-performance web-based **3D PBR (Physically Based Rendering)
   - **3D Timber Plank / Beam**: Architectural wooden board with depth and edge bevels.
   - **Sphere, Rounded Cube, Plane / Wall, Cylinder, Torus Knot**.
 - **Physically Based Shader Engine**:
-  - Simultaneous multi-map mapping: *Albedo / Base Color*, *Normal Map (with OpenGL / DirectX Y-inversion)*, *Roughness*, *Metallic*, *Height / Displacement*, *Physical Transmission / Refraction (for glass)*, and *Ambient Occlusion*.
+  - Multi-map mapping: *Albedo / Base Color*, *Normal Map (with OpenGL / DirectX Y-inversion)*, *Roughness*, *Metallic*, *Height / Displacement*, *Physical Transmission / Refraction (for glass)*, and *Ambient Occlusion*.
   - Real-time **Displacement / Tessellation** with live geometry subdivision control (32 to 256 segments).
   - Real-time **Wireframe overlay** mode to inspect polygon topology.
 - **Lighting & Studio Environments**:
@@ -30,28 +30,32 @@ An interactive, high-performance web-based **3D PBR (Physically Based Rendering)
   - Quick camera orientation buttons (**ISO, Front, Top**) and damping OrbitControls.
 
 ### 2. 🔍 High-Resolution 2D Map Inspector
-- Inspect individual 2K / 4K maps (*BaseColor, Normal, Roughness, Height, Metallic, Refraction*).
+- Inspect individual 2K / 4K maps (*BaseColor, Normal, Roughness, Height, Metallic, Ambient Occlusion*).
 - Pan & interactive Zoom (from 20% to 600%).
 - **A/B Split-Screen Comparison**: Interactive vertical divider slider to contrast two maps side-by-side (e.g. *BaseColor vs Normal*).
 - **Color Channel Isolation**: Extract RGB, Red, Green, Blue, or Invert channels.
 
-### 3. 📚 Smart Material Catalog & Search
-- Auto-detected **31 complete PBR material sets** comprising **154 texture maps**.
-- Instant search and thematic category filters:
-  - *Wood & Timber* (Oak parquet, rustic planks, herringbone, pine, clock tower beams)
-  - *Bricks & Masonry* (Clay bricks, weathered brick walls, clock tower dome replicas)
-  - *Metals* (Clear copper, green patina copper)
-  - *Glass & Crystals* (Clean glass, weathered glass with physical IOR transmission)
-  - *Stone & Concrete* (Cobblestone floors, accent stone)
-  - *Roofing & Tiles* (Slate roof, copper green roofs)
-  - *Plaster & Walls* (Smooth plaster, weathered plaster)
-- Favorites / bookmarking system with browser `localStorage` persistence.
+### 3. 📱 Nomad Sculpt (iPad / iPadOS) 1-Tap Export
+- **Export Alpha / Stamp (Height PNG)**: Optimized brush stamp for sculpting wrinkles, rock cracks, dragon scales, wood grains, or hex patterns directly onto your 3D mesh in Nomad.
+- **Open 3D Model (.GLB PBR) in Nomad**: Generates a `.glb` binary with embedded PBR textures that opens directly in Nomad Sculpt via the iOS Share Sheet!
+- **iPad Files App Integration**: Save alphas straight to `On My iPad > Nomad > alphas` or textures to `On My iPad > Nomad > textures`.
 
-### 4. 🌍 Internationalization (i18n / Locale)
-- Seamless one-click language toggle between **Español (ES)** and **English (EN)** with `localStorage` memory.
+### 4. 📚 100% Free & Legal Open-Source Material Catalog
+- **25 Complete PBR Material Sets (119 Texture Maps)** across 7 rich categories:
+  - **Sci-Fi & Cyberpunk**: Cyberpunk Hex Plating (Carbon Fiber & Titanium).
+  - **Wood & Timber**: Oak Parquet, Rustic Planks, Herringbone Parquet, Natural Pine, Clock Tower Wood Frames & Single Planks.
+  - **Bricks & Masonry**: Red Clay Bricks, Weathered Dark Bricks, Fantasy Dungeon Flagstone, Clock Tower Replica Domes (with and without aperture window).
+  - **Tiles & Ceramics**: Modern Hexagon Ceramic Wall Tiles.
+  - **Stone & Concrete**: White Carrara Luxury Marble, Kintsugi Gold Vein Marble, Architectural Concrete Panels.
+  - **Fabric & Leather**: Woven Linen Cloth, Fine Grain Black Leather, Dragon Scale Armored Leather.
+  - **Ground & Nature**: Forest Soil, Twigs & Pebbles.
+- Instant search, category filters, and favorites system with `localStorage` persistence.
 
-### 5. ⚡ 3D Suite Exporters & 1-Click HD Capture
-- **Blender (Python)**: Auto-generated script that creates the complete `Principled BSDF` node tree with proper color space and UV mapping in Blender.
+### 5. 🌍 Internationalization (i18n / Locale)
+- One-click language toggle between **Español (ES)** and **English (EN)**.
+
+### 6. ⚡ 3D Suite Exporters & 1-Click HD Capture
+- **Blender (Python)**: Auto-generated script creating the complete `Principled BSDF` node tree with proper color space and UV mapping in Blender.
 - **Unreal Engine 5**: Texture compression guide and Material Graph connections.
 - **Unity (URP)**: Lit Shader slot mapping.
 - **Three.js**: Ready-to-use TypeScript/JavaScript snippet.
@@ -61,7 +65,7 @@ An interactive, high-performance web-based **3D PBR (Physically Based Rendering)
 
 ## 🛠️ Tech Stack
 
-- **3D Engine**: [Three.js](https://threejs.org/) (WebGL2, PCFSoftShadowMap, ACESFilmicToneMapping)
+- **3D Engine**: [Three.js](https://threejs.org/) (WebGL2, PCFSoftShadowMap, ACESFilmicToneMapping, GLTFExporter)
 - **UI Framework**: [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
 - **Bundler & Dev Server**: [Vite 6](https://vitejs.dev/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
@@ -107,8 +111,8 @@ npm run preview
 
 ---
 
-## 📄 License
-This project is open source and available under the [MIT License](LICENSE).
-All included textures are **100% Free & Open Source**:
-- **ambientCG Textures**: Dedicated to the public domain under the [Creative Commons CC0 1.0 Universal License](https://creativecommons.org/publicdomain/zero/1.0/).
-- **Procedural / Game-Art Replicas**: Custom procedural and shader textures generated for this project.
+## 📄 License & Asset Credits
+- Software Code: [MIT License](LICENSE).
+- All Textures: **100% Free & Open Source**:
+  - **ambientCG Textures**: Dedicated to the public domain under the [Creative Commons CC0 1.0 Universal License](https://creativecommons.org/publicdomain/zero/1.0/).
+  - **Procedural / Game-Art Replicas**: Custom game-ready procedural and shader textures generated for this project.
