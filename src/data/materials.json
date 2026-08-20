@@ -1,0 +1,299 @@
+{
+  "generatedAt": "2026-08-20T07:31:09.956Z",
+  "totalMaterials": 14,
+  "totalFiles": 67,
+  "categories": [
+    "Bricks & Masonry",
+    "Wood & Timber"
+  ],
+  "materials": [
+    {
+      "id": "EXTRA_Bricks033",
+      "name": "Bricks 033 (Red Clay Clean)",
+      "category": "Bricks & Masonry",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_Bricks033_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_Bricks033_basecolor.png",
+        "height": "assets/textures/EXTRA_Bricks033_height.png",
+        "normal": "assets/textures/EXTRA_Bricks033_normal.png",
+        "roughness": "assets/textures/EXTRA_Bricks033_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 2792449,
+        "basecolor": 5246647,
+        "height": 6882949,
+        "normal": 22945061,
+        "roughness": 2332864
+      },
+      "totalSizeBytes": 40199970
+    },
+    {
+      "id": "EXTRA_Bricks059",
+      "name": "Bricks 059 (Weathered Dark)",
+      "category": "Bricks & Masonry",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_Bricks059_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_Bricks059_basecolor.png",
+        "height": "assets/textures/EXTRA_Bricks059_height.png",
+        "normal": "assets/textures/EXTRA_Bricks059_normal.png",
+        "roughness": "assets/textures/EXTRA_Bricks059_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1984049,
+        "basecolor": 7764618,
+        "height": 6170950,
+        "normal": 22121519,
+        "roughness": 2172735
+      },
+      "totalSizeBytes": 40213871
+    },
+    {
+      "id": "TowerClock_DomeBricks_Parallel",
+      "name": "Tower Clock Dome Bricks (Parallel Courses)",
+      "category": "Bricks & Masonry",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/TowerClock_DomeBricks_Parallel_ambientOcclusion.png",
+        "basecolor": "assets/textures/TowerClock_DomeBricks_Parallel_basecolor.png",
+        "height": "assets/textures/TowerClock_DomeBricks_Parallel_height.png",
+        "normal": "assets/textures/TowerClock_DomeBricks_Parallel_normal.png",
+        "roughness": "assets/textures/TowerClock_DomeBricks_Parallel_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1435238,
+        "basecolor": 6408280,
+        "height": 2451699,
+        "normal": 7006117,
+        "roughness": 1405517
+      },
+      "totalSizeBytes": 18706851
+    },
+    {
+      "id": "TowerClock_DomeBricks_Window",
+      "name": "Tower Clock Dome Bricks (With Circular Window)",
+      "category": "Bricks & Masonry",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/TowerClock_DomeBricks_Window_ambientOcclusion.png",
+        "basecolor": "assets/textures/TowerClock_DomeBricks_Window_basecolor.png",
+        "height": "assets/textures/TowerClock_DomeBricks_Window_height.png",
+        "normal": "assets/textures/TowerClock_DomeBricks_Window_normal.png",
+        "roughness": "assets/textures/TowerClock_DomeBricks_Window_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1420772,
+        "basecolor": 6242090,
+        "height": 2388003,
+        "normal": 6765080,
+        "roughness": 1353575
+      },
+      "totalSizeBytes": 18169520
+    },
+    {
+      "id": "TowerClock_DomeStone",
+      "name": "Tower Clock Dome Stone (Cupola Masonry)",
+      "category": "Bricks & Masonry",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/TowerClock_DomeStone_ambientOcclusion.png",
+        "basecolor": "assets/textures/TowerClock_DomeStone_basecolor.png",
+        "height": "assets/textures/TowerClock_DomeStone_height.png",
+        "normal": "assets/textures/TowerClock_DomeStone_normal.png",
+        "roughness": "assets/textures/TowerClock_DomeStone_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1454006,
+        "basecolor": 6363303,
+        "height": 2407800,
+        "normal": 7032194,
+        "roughness": 1323927
+      },
+      "totalSizeBytes": 18581230
+    },
+    {
+      "id": "TowerClock_Replica_DomeBricks",
+      "name": "Tower Clock Replica Dome (No Window - Exact Game Art)",
+      "category": "Bricks & Masonry",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/TowerClock_Replica_DomeBricks_ambientOcclusion.png",
+        "basecolor": "assets/textures/TowerClock_Replica_DomeBricks_basecolor.png",
+        "height": "assets/textures/TowerClock_Replica_DomeBricks_height.png",
+        "normal": "assets/textures/TowerClock_Replica_DomeBricks_normal.png",
+        "roughness": "assets/textures/TowerClock_Replica_DomeBricks_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1063856,
+        "basecolor": 4858472,
+        "height": 1778183,
+        "normal": 4472276,
+        "roughness": 820457
+      },
+      "totalSizeBytes": 12993244
+    },
+    {
+      "id": "TowerClock_Replica_DomeBricks_Window",
+      "name": "Tower Clock Replica Dome (With Window - Exact Game Art)",
+      "category": "Bricks & Masonry",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/TowerClock_Replica_DomeBricks_Window_ambientOcclusion.png",
+        "basecolor": "assets/textures/TowerClock_Replica_DomeBricks_Window_basecolor.png",
+        "height": "assets/textures/TowerClock_Replica_DomeBricks_Window_height.png",
+        "normal": "assets/textures/TowerClock_Replica_DomeBricks_Window_normal.png",
+        "roughness": "assets/textures/TowerClock_Replica_DomeBricks_Window_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1037359,
+        "basecolor": 4693474,
+        "height": 1679940,
+        "normal": 4184333,
+        "roughness": 769978
+      },
+      "totalSizeBytes": 12365084
+    },
+    {
+      "id": "TowerClock_SinglePlank_Full",
+      "name": "Tower Clock Single Plank (Edge-to-Edge)",
+      "category": "Wood & Timber",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/TowerClock_SinglePlank_Full_ambientOcclusion.png",
+        "basecolor": "assets/textures/TowerClock_SinglePlank_Full_basecolor.png",
+        "height": "assets/textures/TowerClock_SinglePlank_Full_height.png",
+        "normal": "assets/textures/TowerClock_SinglePlank_Full_normal.png",
+        "roughness": "assets/textures/TowerClock_SinglePlank_Full_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1219920,
+        "basecolor": 5539310,
+        "height": 2228010,
+        "normal": 5957749,
+        "roughness": 1367759
+      },
+      "totalSizeBytes": 16312748
+    },
+    {
+      "id": "TowerClock_SinglePlank_Isolated",
+      "name": "Tower Clock Single Plank (Isolated Board)",
+      "category": "Wood & Timber",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/TowerClock_SinglePlank_Isolated_ambientOcclusion.png",
+        "basecolor": "assets/textures/TowerClock_SinglePlank_Isolated_basecolor.png",
+        "height": "assets/textures/TowerClock_SinglePlank_Isolated_height.png",
+        "normal": "assets/textures/TowerClock_SinglePlank_Isolated_normal.png",
+        "roughness": "assets/textures/TowerClock_SinglePlank_Isolated_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 593119,
+        "basecolor": 2084296,
+        "height": 893863,
+        "normal": 2742593,
+        "roughness": 497536
+      },
+      "totalSizeBytes": 6811407
+    },
+    {
+      "id": "TowerClock_WoodFrame",
+      "name": "Tower Clock Wood Frame (Central Shaft)",
+      "category": "Wood & Timber",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/TowerClock_WoodFrame_ambientOcclusion.png",
+        "basecolor": "assets/textures/TowerClock_WoodFrame_basecolor.png",
+        "height": "assets/textures/TowerClock_WoodFrame_height.png",
+        "normal": "assets/textures/TowerClock_WoodFrame_normal.png",
+        "roughness": "assets/textures/TowerClock_WoodFrame_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 958338,
+        "basecolor": 5159703,
+        "height": 1086165,
+        "normal": 2865890,
+        "roughness": 656418
+      },
+      "totalSizeBytes": 10726514
+    },
+    {
+      "id": "EXTRA_Wood026",
+      "name": "Wood 026 (Natural Pine Fine Grain)",
+      "category": "Wood & Timber",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Wood026_basecolor.png",
+        "height": "assets/textures/EXTRA_Wood026_height.png",
+        "normal": "assets/textures/EXTRA_Wood026_normal.png",
+        "roughness": "assets/textures/EXTRA_Wood026_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 4792793,
+        "height": 7138842,
+        "normal": 21587739,
+        "roughness": 1930292
+      },
+      "totalSizeBytes": 35449666
+    },
+    {
+      "id": "EXTRA_Wood049",
+      "name": "Wood 049 (Oak Parquet Floor)",
+      "category": "Wood & Timber",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Wood049_basecolor.png",
+        "height": "assets/textures/EXTRA_Wood049_height.png",
+        "normal": "assets/textures/EXTRA_Wood049_normal.png",
+        "roughness": "assets/textures/EXTRA_Wood049_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 4270482,
+        "height": 6819938,
+        "normal": 21037605,
+        "roughness": 2745935
+      },
+      "totalSizeBytes": 34873960
+    },
+    {
+      "id": "EXTRA_Wood066",
+      "name": "Wood 066 (Rustic Planks Weathered)",
+      "category": "Wood & Timber",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Wood066_basecolor.png",
+        "height": "assets/textures/EXTRA_Wood066_height.png",
+        "normal": "assets/textures/EXTRA_Wood066_normal.png",
+        "roughness": "assets/textures/EXTRA_Wood066_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 8351781,
+        "height": 7414890,
+        "normal": 20518769,
+        "roughness": 1586279
+      },
+      "totalSizeBytes": 37871719
+    },
+    {
+      "id": "EXTRA_WoodFloor041",
+      "name": "Wood Floor 041 (Herringbone Parquet)",
+      "category": "Wood & Timber",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_WoodFloor041_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_WoodFloor041_basecolor.png",
+        "height": "assets/textures/EXTRA_WoodFloor041_height.png",
+        "normal": "assets/textures/EXTRA_WoodFloor041_normal.png",
+        "roughness": "assets/textures/EXTRA_WoodFloor041_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1252310,
+        "basecolor": 5725014,
+        "height": 6785810,
+        "normal": 20266660,
+        "roughness": 1141943
+      },
+      "totalSizeBytes": 35171737
+    }
+  ]
+}
