@@ -24,6 +24,10 @@ const friendlyNames = {
   'EXTRA_Wood066': { name: 'Wood 066 (Rustic Planks Weathered)', category: 'Wood & Timber' },
   'EXTRA_WoodFloor041': { name: 'Wood Floor 041 (Herringbone Parquet)', category: 'Wood & Timber' },
   'EXTRA_Wood026': { name: 'Wood 026 (Natural Pine Fine Grain)', category: 'Wood & Timber' },
+  'EXTRA_Wood051': { name: 'Wood 051 (Dark Walnut Fine Grain)', category: 'Wood & Timber' },
+  'EXTRA_Wood060': { name: 'Wood 060 (Fine Mahogany Board)', category: 'Wood & Timber' },
+  'EXTRA_WoodFloor007': { name: 'Wood Floor 007 (Diagonal Parquet)', category: 'Wood & Timber' },
+  'EXTRA_Bark001': { name: 'Bark 001 (Natural Forest Tree Bark)', category: 'Wood & Timber' },
   'TowerClock_WoodFrame': { name: 'Tower Clock Wood Frame (Central Shaft)', category: 'Wood & Timber' },
   'TowerClock_SinglePlank_Isolated': { name: 'Tower Clock Single Plank (Isolated Board)', category: 'Wood & Timber' },
   'TowerClock_SinglePlank_Full': { name: 'Tower Clock Single Plank (Edge-to-Edge)', category: 'Wood & Timber' },
@@ -31,6 +35,10 @@ const friendlyNames = {
   // Bricks & Masonry
   'EXTRA_Bricks033': { name: 'Bricks 033 (Red Clay Clean)', category: 'Bricks & Masonry' },
   'EXTRA_Bricks059': { name: 'Bricks 059 (Weathered Dark)', category: 'Bricks & Masonry' },
+  'EXTRA_Bricks058': { name: 'Bricks 058 (Old Industrial Red Brick)', category: 'Bricks & Masonry' },
+  'EXTRA_PavingStones070': { name: 'Paving Stones 070 (European Cobblestone)', category: 'Bricks & Masonry' },
+  'EXTRA_PavingStones092': { name: 'Paving Stones 092 (Square Flagstone Patio)', category: 'Bricks & Masonry' },
+  'Fantasy_DungeonStone': { name: 'Fantasy Dungeon Flagstone (Castle Floor)', category: 'Bricks & Masonry' },
   'TowerClock_DomeStone': { name: 'Tower Clock Dome Stone (Cupola Masonry)', category: 'Bricks & Masonry' },
   'TowerClock_DomeBricks_Parallel': { name: 'Tower Clock Dome Bricks (Parallel Courses)', category: 'Bricks & Masonry' },
   'TowerClock_DomeBricks_Window': { name: 'Tower Clock Dome Bricks (With Circular Window)', category: 'Bricks & Masonry' },
@@ -39,24 +47,47 @@ const friendlyNames = {
   
   // Tiles & Ceramics
   'EXTRA_Tiles074': { name: 'Tiles 074 (Modern Hexagon Ceramic)', category: 'Tiles & Ceramics' },
+  'EXTRA_Tiles079': { name: 'Tiles 079 (Subway Beveled White Tiles)', category: 'Tiles & Ceramics' },
+  'EXTRA_Tiles093': { name: 'Tiles 093 (Spanish Mosaic Ceramic Floor)', category: 'Tiles & Ceramics' },
+  'EXTRA_Tiles107': { name: 'Tiles 107 (Moroccan Blue Glazed Tiles)', category: 'Tiles & Ceramics' },
   
   // Ground & Nature
   'EXTRA_Ground037': { name: 'Ground 037 (Forest Soil & Pebbles)', category: 'Ground & Nature' },
+  'EXTRA_Grass001': { name: 'Grass 001 (Lush Green Lawn Grass)', category: 'Ground & Nature' },
+  'EXTRA_Ground054': { name: 'Ground 054 (Cracked Muddy Dry Earth)', category: 'Ground & Nature' },
+  'EXTRA_Snow005': { name: 'Snow 005 (Crisp Winter Snow & Ice)', category: 'Ground & Nature' },
   
   // Metals & Sci-Fi
   'EXTRA_Metal006': { name: 'Metal 006 (Brushed Steel Sheet)', category: 'Metals' },
+  'EXTRA_Metal001': { name: 'Metal 001 (Diamond Plate Steel Tread)', category: 'Metals' },
+  'EXTRA_Metal008': { name: 'Metal 008 (Rusted Corroded Iron)', category: 'Metals' },
+  'EXTRA_Metal028': { name: 'Metal 028 (Galvanized Zinc Steel)', category: 'Metals' },
+  'EXTRA_Metal032': { name: 'Metal 032 (Gold Foil & Brass Plate)', category: 'Metals' },
   'Cyberpunk_HexPlates': { name: 'Cyberpunk Hex Plating (Carbon & Titanium)', category: 'Sci-Fi & Tech' },
+  'SciFi_PlasmaReactor': { name: 'Sci-Fi Plasma Reactor Core Plating', category: 'Sci-Fi & Tech' },
   
   // Stone & Concrete & Luxury
   'EXTRA_Concrete019': { name: 'Concrete 019 (Architectural Panel)', category: 'Stone & Concrete' },
+  'EXTRA_Concrete034': { name: 'Concrete 034 (Exposed Aggregate Concrete)', category: 'Stone & Concrete' },
   'EXTRA_Marble012': { name: 'Marble 012 (White Carrara Luxury)', category: 'Stone & Concrete' },
+  'EXTRA_Marble006': { name: 'Marble 006 (Calacatta Black Vein)', category: 'Stone & Concrete' },
+  'EXTRA_Rock030': { name: 'Rock 030 (Mossy Forest Cliff Rock)', category: 'Stone & Concrete' },
+  'EXTRA_Rock035': { name: 'Rock 035 (Desert Sandstone Rock)', category: 'Stone & Concrete' },
   'Kintsugi_GoldMarble': { name: 'Kintsugi Black Marble & Gold Veins', category: 'Stone & Concrete' },
-  'Fantasy_DungeonStone': { name: 'Fantasy Dungeon Flagstone (Castle Floor)', category: 'Bricks & Masonry' },
   
-  // Fabrics & Leather
+  // Fabrics & Leather & Carpet
   'EXTRA_Fabric048': { name: 'Fabric 048 (Woven Linen Cloth)', category: 'Fabric & Leather' },
+  'EXTRA_Fabric030': { name: 'Fabric 030 (Denim Jean Fabric)', category: 'Fabric & Leather' },
   'EXTRA_Leather026': { name: 'Leather 026 (Fine Grain Black Leather)', category: 'Fabric & Leather' },
+  'EXTRA_Leather015': { name: 'Leather 015 (Vintage Brown Leather)', category: 'Fabric & Leather' },
+  'EXTRA_Carpet006': { name: 'Carpet 006 (Cozy Tufted Wool Carpet)', category: 'Fabric & Leather' },
   'Dragon_ScaleLeather': { name: 'Dragon Scale Armor Leather (Armored Hide)', category: 'Fabric & Leather' },
+
+  // Glass & Crystals
+  'Crystal_AmethystGeode': { name: 'Crystal 001 (Amethyst Gemstone Geode)', category: 'Glass & Crystals' },
+
+  // Roofing
+  'EXTRA_RoofingTiles008': { name: 'Roofing Tiles 008 (Terracotta Spanish Curved)', category: 'Roofing' },
 };
 
 function scanTextures() {
@@ -126,21 +157,23 @@ function scanTextures() {
         const lower = materialKey.toLowerCase();
         if (lower.includes('wood') || lower.includes('timber') || lower.includes('bark') || lower.includes('parquet')) {
           category = 'Wood & Timber';
-        } else if (lower.includes('brick') || lower.includes('dungeon')) {
+        } else if (lower.includes('brick') || lower.includes('dungeon') || lower.includes('paving')) {
           category = 'Bricks & Masonry';
         } else if (lower.includes('tile')) {
           category = 'Tiles & Ceramics';
-        } else if (lower.includes('fabric') || lower.includes('leather') || lower.includes('cloth') || lower.includes('scale')) {
+        } else if (lower.includes('fabric') || lower.includes('leather') || lower.includes('cloth') || lower.includes('scale') || lower.includes('carpet')) {
           category = 'Fabric & Leather';
-        } else if (lower.includes('cyber') || lower.includes('hex') || lower.includes('tech') || lower.includes('panel')) {
+        } else if (lower.includes('cyber') || lower.includes('hex') || lower.includes('tech') || lower.includes('panel') || lower.includes('reactor')) {
           category = 'Sci-Fi & Tech';
-        } else if (lower.includes('ground') || lower.includes('soil') || lower.includes('rock') || lower.includes('grass')) {
+        } else if (lower.includes('ground') || lower.includes('soil') || lower.includes('rock') || lower.includes('grass') || lower.includes('snow') || lower.includes('moss')) {
           category = 'Ground & Nature';
-        } else if (lower.includes('copper') || lower.includes('metal') || lower.includes('iron') || lower.includes('steel')) {
+        } else if (lower.includes('copper') || lower.includes('metal') || lower.includes('iron') || lower.includes('steel') || lower.includes('gold')) {
           category = 'Metals';
         } else if (lower.includes('stone') || lower.includes('marble') || lower.includes('concrete') || lower.includes('cobble')) {
           category = 'Stone & Concrete';
-        } else if (lower.includes('glass')) {
+        } else if (lower.includes('roof')) {
+          category = 'Roofing';
+        } else if (lower.includes('glass') || lower.includes('crystal')) {
           category = 'Glass & Crystals';
         }
       }
@@ -149,7 +182,7 @@ function scanTextures() {
         id: materialKey,
         name: displayName || materialKey,
         category,
-        isTransparent: materialKey.toLowerCase().includes('glass'),
+        isTransparent: materialKey.toLowerCase().includes('glass') || materialKey.toLowerCase().includes('crystal'),
         maps: {},
         sizes: {},
         totalSizeBytes: 0

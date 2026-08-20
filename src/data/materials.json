@@ -1,18 +1,39 @@
 {
-  "generatedAt": "2026-08-20T08:53:33.129Z",
-  "totalMaterials": 25,
-  "totalFiles": 119,
+  "generatedAt": "2026-08-20T10:00:56.574Z",
+  "totalMaterials": 52,
+  "totalFiles": 246,
   "categories": [
     "Bricks & Masonry",
     "Fabric & Leather",
+    "Glass & Crystals",
     "Ground & Nature",
     "Metals",
+    "Roofing",
     "Sci-Fi & Tech",
     "Stone & Concrete",
     "Tiles & Ceramics",
     "Wood & Timber"
   ],
   "materials": [
+    {
+      "id": "EXTRA_Bark001",
+      "name": "Bark 001 (Natural Forest Tree Bark)",
+      "category": "Wood & Timber",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Bark001_basecolor.png",
+        "height": "assets/textures/EXTRA_Bark001_height.png",
+        "normal": "assets/textures/EXTRA_Bark001_normal.png",
+        "roughness": "assets/textures/EXTRA_Bark001_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 4454002,
+        "height": 3803519,
+        "normal": 12248045,
+        "roughness": 1362040
+      },
+      "totalSizeBytes": 21867606
+    },
     {
       "id": "EXTRA_Bricks033",
       "name": "Bricks 033 (Red Clay Clean)",
@@ -33,6 +54,27 @@
         "roughness": 2332864
       },
       "totalSizeBytes": 40199970
+    },
+    {
+      "id": "EXTRA_Bricks058",
+      "name": "Bricks 058 (Old Industrial Red Brick)",
+      "category": "Bricks & Masonry",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_Bricks058_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_Bricks058_basecolor.png",
+        "height": "assets/textures/EXTRA_Bricks058_height.png",
+        "normal": "assets/textures/EXTRA_Bricks058_normal.png",
+        "roughness": "assets/textures/EXTRA_Bricks058_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 2027972,
+        "basecolor": 5244069,
+        "height": 6215920,
+        "normal": 22326025,
+        "roughness": 2218178
+      },
+      "totalSizeBytes": 38032164
     },
     {
       "id": "EXTRA_Bricks059",
@@ -56,6 +98,27 @@
       "totalSizeBytes": 40213871
     },
     {
+      "id": "EXTRA_Carpet006",
+      "name": "Carpet 006 (Cozy Tufted Wool Carpet)",
+      "category": "Fabric & Leather",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_Carpet006_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_Carpet006_basecolor.png",
+        "height": "assets/textures/EXTRA_Carpet006_height.png",
+        "normal": "assets/textures/EXTRA_Carpet006_normal.png",
+        "roughness": "assets/textures/EXTRA_Carpet006_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 3318283,
+        "basecolor": 9553391,
+        "height": 7870412,
+        "normal": 24914807,
+        "roughness": 2256610
+      },
+      "totalSizeBytes": 47913503
+    },
+    {
       "id": "EXTRA_Concrete019",
       "name": "Concrete 019 (Architectural Panel)",
       "category": "Stone & Concrete",
@@ -73,6 +136,48 @@
         "roughness": 2697586
       },
       "totalSizeBytes": 39697735
+    },
+    {
+      "id": "EXTRA_Concrete034",
+      "name": "Concrete 034 (Exposed Aggregate Concrete)",
+      "category": "Stone & Concrete",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Concrete034_basecolor.png",
+        "height": "assets/textures/EXTRA_Concrete034_height.png",
+        "normal": "assets/textures/EXTRA_Concrete034_normal.png",
+        "roughness": "assets/textures/EXTRA_Concrete034_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 1223411,
+        "height": 3063022,
+        "normal": 10922483,
+        "roughness": 853470
+      },
+      "totalSizeBytes": 16062386
+    },
+    {
+      "id": "Crystal_AmethystGeode",
+      "name": "Crystal 001 (Amethyst Gemstone Geode)",
+      "category": "Glass & Crystals",
+      "isTransparent": true,
+      "maps": {
+        "ambientOcclusion": "assets/textures/Crystal_AmethystGeode_ambientOcclusion.png",
+        "basecolor": "assets/textures/Crystal_AmethystGeode_basecolor.png",
+        "height": "assets/textures/Crystal_AmethystGeode_height.png",
+        "metallic": "assets/textures/Crystal_AmethystGeode_metallic.png",
+        "normal": "assets/textures/Crystal_AmethystGeode_normal.png",
+        "roughness": "assets/textures/Crystal_AmethystGeode_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1467259,
+        "basecolor": 6431128,
+        "height": 2431622,
+        "metallic": 4145,
+        "normal": 6553570,
+        "roughness": 1469085
+      },
+      "totalSizeBytes": 18356809
     },
     {
       "id": "Cyberpunk_HexPlates",
@@ -119,6 +224,27 @@
       "totalSizeBytes": 15904757
     },
     {
+      "id": "EXTRA_Fabric030",
+      "name": "Fabric 030 (Denim Jean Fabric)",
+      "category": "Fabric & Leather",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_Fabric030_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_Fabric030_basecolor.png",
+        "height": "assets/textures/EXTRA_Fabric030_height.png",
+        "normal": "assets/textures/EXTRA_Fabric030_normal.png",
+        "roughness": "assets/textures/EXTRA_Fabric030_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 2151634,
+        "basecolor": 9409742,
+        "height": 7550763,
+        "normal": 24027641,
+        "roughness": 3174780
+      },
+      "totalSizeBytes": 46314560
+    },
+    {
       "id": "EXTRA_Fabric048",
       "name": "Fabric 048 (Woven Linen Cloth)",
       "category": "Fabric & Leather",
@@ -161,6 +287,27 @@
       "totalSizeBytes": 17957400
     },
     {
+      "id": "EXTRA_Grass001",
+      "name": "Grass 001 (Lush Green Lawn Grass)",
+      "category": "Ground & Nature",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_Grass001_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_Grass001_basecolor.png",
+        "height": "assets/textures/EXTRA_Grass001_height.png",
+        "normal": "assets/textures/EXTRA_Grass001_normal.png",
+        "roughness": "assets/textures/EXTRA_Grass001_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 3489533,
+        "basecolor": 7579103,
+        "height": 7871743,
+        "normal": 24252671,
+        "roughness": 3128273
+      },
+      "totalSizeBytes": 46321323
+    },
+    {
       "id": "EXTRA_Ground037",
       "name": "Ground 037 (Forest Soil & Pebbles)",
       "category": "Ground & Nature",
@@ -180,6 +327,27 @@
         "roughness": 2916727
       },
       "totalSizeBytes": 46424246
+    },
+    {
+      "id": "EXTRA_Ground054",
+      "name": "Ground 054 (Cracked Muddy Dry Earth)",
+      "category": "Ground & Nature",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_Ground054_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_Ground054_basecolor.png",
+        "height": "assets/textures/EXTRA_Ground054_height.png",
+        "normal": "assets/textures/EXTRA_Ground054_normal.png",
+        "roughness": "assets/textures/EXTRA_Ground054_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 2141722,
+        "basecolor": 9003954,
+        "height": 6389302,
+        "normal": 23755389,
+        "roughness": 2730623
+      },
+      "totalSizeBytes": 44020990
     },
     {
       "id": "Kintsugi_GoldMarble",
@@ -205,6 +373,27 @@
       "totalSizeBytes": 10152970
     },
     {
+      "id": "EXTRA_Leather015",
+      "name": "Leather 015 (Vintage Brown Leather)",
+      "category": "Fabric & Leather",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_Leather015_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_Leather015_basecolor.png",
+        "height": "assets/textures/EXTRA_Leather015_height.png",
+        "normal": "assets/textures/EXTRA_Leather015_normal.png",
+        "roughness": "assets/textures/EXTRA_Leather015_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 88814,
+        "basecolor": 1534736,
+        "height": 6141678,
+        "normal": 23271252,
+        "roughness": 2123778
+      },
+      "totalSizeBytes": 33160258
+    },
+    {
       "id": "EXTRA_Leather026",
       "name": "Leather 026 (Fine Grain Black Leather)",
       "category": "Fabric & Leather",
@@ -222,6 +411,25 @@
         "roughness": 2045288
       },
       "totalSizeBytes": 34295922
+    },
+    {
+      "id": "EXTRA_Marble006",
+      "name": "Marble 006 (Calacatta Black Vein)",
+      "category": "Stone & Concrete",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Marble006_basecolor.png",
+        "height": "assets/textures/EXTRA_Marble006_height.png",
+        "normal": "assets/textures/EXTRA_Marble006_normal.png",
+        "roughness": "assets/textures/EXTRA_Marble006_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 7708522,
+        "height": 7838753,
+        "normal": 14980319,
+        "roughness": 1947369
+      },
+      "totalSizeBytes": 32474963
     },
     {
       "id": "EXTRA_Marble012",
@@ -243,6 +451,25 @@
       "totalSizeBytes": 33140035
     },
     {
+      "id": "EXTRA_Metal001",
+      "name": "Metal 001 (Diamond Plate Steel Tread)",
+      "category": "Metals",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Metal001_basecolor.png",
+        "metallic": "assets/textures/EXTRA_Metal001_metallic.png",
+        "normal": "assets/textures/EXTRA_Metal001_normal.png",
+        "roughness": "assets/textures/EXTRA_Metal001_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 5339699,
+        "metallic": 341128,
+        "normal": 15593547,
+        "roughness": 1592122
+      },
+      "totalSizeBytes": 22866496
+    },
+    {
       "id": "EXTRA_Metal006",
       "name": "Metal 006 (Brushed Steel Sheet)",
       "category": "Metals",
@@ -262,6 +489,210 @@
       "totalSizeBytes": 10437582
     },
     {
+      "id": "EXTRA_Metal008",
+      "name": "Metal 008 (Rusted Corroded Iron)",
+      "category": "Metals",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Metal008_basecolor.png",
+        "metallic": "assets/textures/EXTRA_Metal008_metallic.png",
+        "normal": "assets/textures/EXTRA_Metal008_normal.png",
+        "roughness": "assets/textures/EXTRA_Metal008_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 6543473,
+        "metallic": 341611,
+        "normal": 17250555,
+        "roughness": 2014835
+      },
+      "totalSizeBytes": 26150474
+    },
+    {
+      "id": "EXTRA_Metal028",
+      "name": "Metal 028 (Galvanized Zinc Steel)",
+      "category": "Metals",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Metal028_basecolor.png",
+        "metallic": "assets/textures/EXTRA_Metal028_metallic.png",
+        "normal": "assets/textures/EXTRA_Metal028_normal.png",
+        "roughness": "assets/textures/EXTRA_Metal028_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 5942865,
+        "metallic": 238610,
+        "normal": 22327801,
+        "roughness": 3248382
+      },
+      "totalSizeBytes": 31757658
+    },
+    {
+      "id": "EXTRA_Metal032",
+      "name": "Metal 032 (Gold Foil & Brass Plate)",
+      "category": "Metals",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Metal032_basecolor.png",
+        "metallic": "assets/textures/EXTRA_Metal032_metallic.png",
+        "normal": "assets/textures/EXTRA_Metal032_normal.png",
+        "roughness": "assets/textures/EXTRA_Metal032_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 5237714,
+        "metallic": 210838,
+        "normal": 17567234,
+        "roughness": 2048597
+      },
+      "totalSizeBytes": 25064383
+    },
+    {
+      "id": "EXTRA_PavingStones070",
+      "name": "Paving Stones 070 (European Cobblestone)",
+      "category": "Bricks & Masonry",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_PavingStones070_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_PavingStones070_basecolor.png",
+        "height": "assets/textures/EXTRA_PavingStones070_height.png",
+        "normal": "assets/textures/EXTRA_PavingStones070_normal.png",
+        "roughness": "assets/textures/EXTRA_PavingStones070_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1144677,
+        "basecolor": 10060926,
+        "height": 6402528,
+        "normal": 23160376,
+        "roughness": 2380447
+      },
+      "totalSizeBytes": 43148954
+    },
+    {
+      "id": "EXTRA_PavingStones092",
+      "name": "Paving Stones 092 (Square Flagstone Patio)",
+      "category": "Bricks & Masonry",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_PavingStones092_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_PavingStones092_basecolor.png",
+        "height": "assets/textures/EXTRA_PavingStones092_height.png",
+        "normal": "assets/textures/EXTRA_PavingStones092_normal.png",
+        "roughness": "assets/textures/EXTRA_PavingStones092_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1095913,
+        "basecolor": 8546583,
+        "height": 6409023,
+        "normal": 24049080,
+        "roughness": 2312434
+      },
+      "totalSizeBytes": 42413033
+    },
+    {
+      "id": "EXTRA_Rock030",
+      "name": "Rock 030 (Mossy Forest Cliff Rock)",
+      "category": "Stone & Concrete",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_Rock030_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_Rock030_basecolor.png",
+        "height": "assets/textures/EXTRA_Rock030_height.png",
+        "normal": "assets/textures/EXTRA_Rock030_normal.png",
+        "roughness": "assets/textures/EXTRA_Rock030_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1995421,
+        "basecolor": 9103818,
+        "height": 5835100,
+        "normal": 24333963,
+        "roughness": 2343936
+      },
+      "totalSizeBytes": 43612238
+    },
+    {
+      "id": "EXTRA_Rock035",
+      "name": "Rock 035 (Desert Sandstone Rock)",
+      "category": "Stone & Concrete",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_Rock035_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_Rock035_basecolor.png",
+        "height": "assets/textures/EXTRA_Rock035_height.png",
+        "normal": "assets/textures/EXTRA_Rock035_normal.png",
+        "roughness": "assets/textures/EXTRA_Rock035_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1982638,
+        "basecolor": 7421142,
+        "height": 5784361,
+        "normal": 24322588,
+        "roughness": 2354923
+      },
+      "totalSizeBytes": 41865652
+    },
+    {
+      "id": "EXTRA_RoofingTiles008",
+      "name": "Roofing Tiles 008 (Terracotta Spanish Curved)",
+      "category": "Roofing",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_RoofingTiles008_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_RoofingTiles008_basecolor.png",
+        "height": "assets/textures/EXTRA_RoofingTiles008_height.png",
+        "normal": "assets/textures/EXTRA_RoofingTiles008_normal.png",
+        "roughness": "assets/textures/EXTRA_RoofingTiles008_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 2463717,
+        "basecolor": 3645367,
+        "height": 6205859,
+        "normal": 23448616,
+        "roughness": 2759173
+      },
+      "totalSizeBytes": 38522732
+    },
+    {
+      "id": "SciFi_PlasmaReactor",
+      "name": "Sci-Fi Plasma Reactor Core Plating",
+      "category": "Sci-Fi & Tech",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/SciFi_PlasmaReactor_ambientOcclusion.png",
+        "basecolor": "assets/textures/SciFi_PlasmaReactor_basecolor.png",
+        "height": "assets/textures/SciFi_PlasmaReactor_height.png",
+        "metallic": "assets/textures/SciFi_PlasmaReactor_metallic.png",
+        "normal": "assets/textures/SciFi_PlasmaReactor_normal.png",
+        "roughness": "assets/textures/SciFi_PlasmaReactor_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1227213,
+        "basecolor": 5881918,
+        "height": 2084664,
+        "metallic": 1980836,
+        "normal": 6164244,
+        "roughness": 1428081
+      },
+      "totalSizeBytes": 18766956
+    },
+    {
+      "id": "EXTRA_Snow005",
+      "name": "Snow 005 (Crisp Winter Snow & Ice)",
+      "category": "Ground & Nature",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Snow005_basecolor.png",
+        "height": "assets/textures/EXTRA_Snow005_height.png",
+        "normal": "assets/textures/EXTRA_Snow005_normal.png",
+        "roughness": "assets/textures/EXTRA_Snow005_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 3336746,
+        "height": 7269145,
+        "normal": 23557874,
+        "roughness": 2432105
+      },
+      "totalSizeBytes": 36595870
+    },
+    {
       "id": "EXTRA_Tiles074",
       "name": "Tiles 074 (Modern Hexagon Ceramic)",
       "category": "Tiles & Ceramics",
@@ -279,6 +710,67 @@
         "roughness": 1717299
       },
       "totalSizeBytes": 27286891
+    },
+    {
+      "id": "EXTRA_Tiles079",
+      "name": "Tiles 079 (Subway Beveled White Tiles)",
+      "category": "Tiles & Ceramics",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Tiles079_basecolor.png",
+        "height": "assets/textures/EXTRA_Tiles079_height.png",
+        "normal": "assets/textures/EXTRA_Tiles079_normal.png",
+        "roughness": "assets/textures/EXTRA_Tiles079_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 6486367,
+        "height": 6390340,
+        "normal": 15192756,
+        "roughness": 1715946
+      },
+      "totalSizeBytes": 29785409
+    },
+    {
+      "id": "EXTRA_Tiles093",
+      "name": "Tiles 093 (Spanish Mosaic Ceramic Floor)",
+      "category": "Tiles & Ceramics",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_Tiles093_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_Tiles093_basecolor.png",
+        "height": "assets/textures/EXTRA_Tiles093_height.png",
+        "normal": "assets/textures/EXTRA_Tiles093_normal.png",
+        "roughness": "assets/textures/EXTRA_Tiles093_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 2653480,
+        "basecolor": 6727387,
+        "height": 6531223,
+        "normal": 23792589,
+        "roughness": 2556145
+      },
+      "totalSizeBytes": 42260824
+    },
+    {
+      "id": "EXTRA_Tiles107",
+      "name": "Tiles 107 (Moroccan Blue Glazed Tiles)",
+      "category": "Tiles & Ceramics",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_Tiles107_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_Tiles107_basecolor.png",
+        "height": "assets/textures/EXTRA_Tiles107_height.png",
+        "normal": "assets/textures/EXTRA_Tiles107_normal.png",
+        "roughness": "assets/textures/EXTRA_Tiles107_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 108818,
+        "basecolor": 790496,
+        "height": 4340591,
+        "normal": 9968142,
+        "roughness": 453608
+      },
+      "totalSizeBytes": 15661655
     },
     {
       "id": "TowerClock_DomeBricks_Parallel",
@@ -487,6 +979,46 @@
       "totalSizeBytes": 34873960
     },
     {
+      "id": "EXTRA_Wood051",
+      "name": "Wood 051 (Dark Walnut Fine Grain)",
+      "category": "Wood & Timber",
+      "isTransparent": false,
+      "maps": {
+        "basecolor": "assets/textures/EXTRA_Wood051_basecolor.png",
+        "height": "assets/textures/EXTRA_Wood051_height.png",
+        "normal": "assets/textures/EXTRA_Wood051_normal.png",
+        "roughness": "assets/textures/EXTRA_Wood051_roughness.png"
+      },
+      "sizes": {
+        "basecolor": 3658772,
+        "height": 6859033,
+        "normal": 21180071,
+        "roughness": 2625696
+      },
+      "totalSizeBytes": 34323572
+    },
+    {
+      "id": "EXTRA_Wood060",
+      "name": "Wood 060 (Fine Mahogany Board)",
+      "category": "Wood & Timber",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_Wood060_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_Wood060_basecolor.png",
+        "height": "assets/textures/EXTRA_Wood060_height.png",
+        "normal": "assets/textures/EXTRA_Wood060_normal.png",
+        "roughness": "assets/textures/EXTRA_Wood060_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 2283059,
+        "basecolor": 9601531,
+        "height": 7202933,
+        "normal": 23905188,
+        "roughness": 2501494
+      },
+      "totalSizeBytes": 45494205
+    },
+    {
       "id": "EXTRA_Wood066",
       "name": "Wood 066 (Rustic Planks Weathered)",
       "category": "Wood & Timber",
@@ -504,6 +1036,27 @@
         "roughness": 1586279
       },
       "totalSizeBytes": 37871719
+    },
+    {
+      "id": "EXTRA_WoodFloor007",
+      "name": "Wood Floor 007 (Diagonal Parquet)",
+      "category": "Wood & Timber",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/EXTRA_WoodFloor007_ambientOcclusion.png",
+        "basecolor": "assets/textures/EXTRA_WoodFloor007_basecolor.png",
+        "height": "assets/textures/EXTRA_WoodFloor007_height.png",
+        "normal": "assets/textures/EXTRA_WoodFloor007_normal.png",
+        "roughness": "assets/textures/EXTRA_WoodFloor007_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 8287,
+        "basecolor": 2812266,
+        "height": 4802009,
+        "normal": 15964860,
+        "roughness": 625576
+      },
+      "totalSizeBytes": 24212998
     },
     {
       "id": "EXTRA_WoodFloor041",

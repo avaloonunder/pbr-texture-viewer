@@ -41,14 +41,17 @@ An interactive, high-performance web-based **3D PBR (Physically Based Rendering)
 - **iPad Files App Integration**: Save alphas straight to `On My iPad > Nomad > alphas` or textures to `On My iPad > Nomad > textures`.
 
 ### 4. 📚 100% Free & Legal Open-Source Material Catalog
-- **25 Complete PBR Material Sets (119 Texture Maps)** across 7 rich categories:
-  - **Sci-Fi & Cyberpunk**: Cyberpunk Hex Plating (Carbon Fiber & Titanium).
-  - **Wood & Timber**: Oak Parquet, Rustic Planks, Herringbone Parquet, Natural Pine, Clock Tower Wood Frames & Single Planks.
-  - **Bricks & Masonry**: Red Clay Bricks, Weathered Dark Bricks, Fantasy Dungeon Flagstone, Clock Tower Replica Domes (with and without aperture window).
-  - **Tiles & Ceramics**: Modern Hexagon Ceramic Wall Tiles.
-  - **Stone & Concrete**: White Carrara Luxury Marble, Kintsugi Gold Vein Marble, Architectural Concrete Panels.
-  - **Fabric & Leather**: Woven Linen Cloth, Fine Grain Black Leather, Dragon Scale Armored Leather.
-  - **Ground & Nature**: Forest Soil, Twigs & Pebbles.
+- **52 Complete PBR Material Sets (246 Texture Maps)** across 10 rich categories:
+  - **Wood & Timber (11 sets)**: Oak Parquet, Rustic Planks, Herringbone Parquet, Natural Pine, Dark Walnut, Fine Mahogany, Diagonal Parquet, Forest Tree Bark, Clock Tower Wood Frames & Single Planks.
+  - **Bricks & Masonry (10 sets)**: Red Clay Clean, Weathered Dark, Old Industrial Red Brick, European Cobblestone, Square Flagstone Patio, Fantasy Dungeon Flagstone, Clock Tower Replica Domes.
+  - **Metals (6 sets)**: Brushed Steel Sheet, Diamond Plate Steel, Rusted Corroded Iron, Galvanized Zinc Steel, Gold Foil & Brass Plate.
+  - **Stone & Concrete (7 sets)**: White Carrara Luxury Marble, Calacatta Black Vein Marble, Kintsugi Black Marble & Gold Veins, Architectural Concrete Panel, Exposed Aggregate Concrete, Mossy Forest Cliff Rock, Desert Sandstone Rock.
+  - **Tiles & Ceramics (4 sets)**: Modern Hexagon Ceramic, Subway Beveled White Tiles, Spanish Mosaic Ceramic Floor, Moroccan Blue Glazed Tiles.
+  - **Fabric, Leather & Carpet (6 sets)**: Woven Linen Cloth, Fine Grain Black Leather, Vintage Brown Leather, Denim Jean Fabric, Cozy Tufted Wool Carpet, Dragon Scale Armored Leather.
+  - **Ground & Nature (4 sets)**: Forest Soil & Pebbles, Lush Green Lawn Grass, Cracked Muddy Dry Earth, Crisp Winter Snow & Ice.
+  - **Sci-Fi & Tech (2 sets)**: Cyberpunk Hex Plating, Sci-Fi Plasma Reactor Core Plating.
+  - **Glass & Crystals (1 set)**: Crystal Amethyst Gemstone Geode.
+  - **Roofing (1 set)**: Terracotta Spanish Curved Roof Tiles.
 - Instant search, category filters, and favorites system with `localStorage` persistence.
 
 ### 5. 🌍 Internationalization (i18n / Locale)
