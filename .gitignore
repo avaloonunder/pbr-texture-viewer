@@ -23,3 +23,8 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+
+# Scratch & Generator Scripts
+scripts/
+*.py
+__pycache__/
