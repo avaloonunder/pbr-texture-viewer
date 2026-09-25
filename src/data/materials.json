@@ -1,13 +1,14 @@
 {
-  "generatedAt": "2026-08-20T10:00:56.574Z",
-  "totalMaterials": 52,
-  "totalFiles": 246,
+  "generatedAt": "2026-09-25T11:40:12.476Z",
+  "totalMaterials": 56,
+  "totalFiles": 270,
   "categories": [
     "Bricks & Masonry",
     "Fabric & Leather",
     "Glass & Crystals",
     "Ground & Nature",
     "Metals",
+    "Ornamental & Repujado",
     "Roofing",
     "Sci-Fi & Tech",
     "Stone & Concrete",
@@ -586,6 +587,98 @@
         "roughness": 2312434
       },
       "totalSizeBytes": 42413033
+    },
+    {
+      "id": "Repujado_TooledLeather_Floral",
+      "name": "Repujado Floral Cuero (Tooled Leather)",
+      "category": "Ornamental & Repujado",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/Repujado_TooledLeather_Floral_ambientOcclusion.png",
+        "basecolor": "assets/textures/Repujado_TooledLeather_Floral_basecolor.png",
+        "height": "assets/textures/Repujado_TooledLeather_Floral_height.png",
+        "metallic": "assets/textures/Repujado_TooledLeather_Floral_metallic.png",
+        "normal": "assets/textures/Repujado_TooledLeather_Floral_normal.png",
+        "roughness": "assets/textures/Repujado_TooledLeather_Floral_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1462901,
+        "basecolor": 7518937,
+        "height": 2433075,
+        "metallic": 4145,
+        "normal": 7764221,
+        "roughness": 1904998
+      },
+      "totalSizeBytes": 21088277
+    },
+    {
+      "id": "Repujado_PewterSilver_Floral",
+      "name": "Repujado Floral Estaño y Plata (Pewter Silver)",
+      "category": "Ornamental & Repujado",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/Repujado_PewterSilver_Floral_ambientOcclusion.png",
+        "basecolor": "assets/textures/Repujado_PewterSilver_Floral_basecolor.png",
+        "height": "assets/textures/Repujado_PewterSilver_Floral_height.png",
+        "metallic": "assets/textures/Repujado_PewterSilver_Floral_metallic.png",
+        "normal": "assets/textures/Repujado_PewterSilver_Floral_normal.png",
+        "roughness": "assets/textures/Repujado_PewterSilver_Floral_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1676724,
+        "basecolor": 7124039,
+        "height": 2683110,
+        "metallic": 2532152,
+        "normal": 8265323,
+        "roughness": 2184566
+      },
+      "totalSizeBytes": 24465914
+    },
+    {
+      "id": "Repujado_BaroqueGold_Floral",
+      "name": "Repujado Floral Oro Barroco (Gilded Bronze)",
+      "category": "Ornamental & Repujado",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/Repujado_BaroqueGold_Floral_ambientOcclusion.png",
+        "basecolor": "assets/textures/Repujado_BaroqueGold_Floral_basecolor.png",
+        "height": "assets/textures/Repujado_BaroqueGold_Floral_height.png",
+        "metallic": "assets/textures/Repujado_BaroqueGold_Floral_metallic.png",
+        "normal": "assets/textures/Repujado_BaroqueGold_Floral_normal.png",
+        "roughness": "assets/textures/Repujado_BaroqueGold_Floral_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1634406,
+        "basecolor": 7382181,
+        "height": 2690465,
+        "metallic": 2509552,
+        "normal": 8020618,
+        "roughness": 2053385
+      },
+      "totalSizeBytes": 24290607
+    },
+    {
+      "id": "Repujado_OrnamentalPlaster_Floral",
+      "name": "Repujado Floral Yeso y Estuco (Plaster Relief)",
+      "category": "Ornamental & Repujado",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/Repujado_OrnamentalPlaster_Floral_ambientOcclusion.png",
+        "basecolor": "assets/textures/Repujado_OrnamentalPlaster_Floral_basecolor.png",
+        "height": "assets/textures/Repujado_OrnamentalPlaster_Floral_height.png",
+        "metallic": "assets/textures/Repujado_OrnamentalPlaster_Floral_metallic.png",
+        "normal": "assets/textures/Repujado_OrnamentalPlaster_Floral_normal.png",
+        "roughness": "assets/textures/Repujado_OrnamentalPlaster_Floral_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1285688,
+        "basecolor": 4777059,
+        "height": 1947122,
+        "metallic": 4145,
+        "normal": 5480591,
+        "roughness": 1015433
+      },
+      "totalSizeBytes": 14510038
     },
     {
       "id": "EXTRA_Rock030",

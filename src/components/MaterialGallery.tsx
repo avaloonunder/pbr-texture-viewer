@@ -63,6 +63,7 @@ export const MaterialGallery: React.FC<MaterialGalleryProps> = ({
       case 'Ground & Nature': return t.catGround;
       case 'Fabric & Leather': return t.catFabric;
       case 'Sci-Fi & Tech': return t.catSciFi;
+      case 'Ornamental & Repujado': return t.catOrnamental;
       default: return cat;
     }
   };

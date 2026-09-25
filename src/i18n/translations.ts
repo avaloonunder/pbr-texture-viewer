@@ -44,6 +44,7 @@ export const translations = {
     catGround: 'Suelo y Naturaleza',
     catFabric: 'Telas y Cuero',
     catSciFi: 'Sci-Fi y Cyberpunk',
+    catOrnamental: 'Repujados y Ornamentos',
     catOther: 'Otros',
     
     // Properties Panel
@@ -194,6 +195,7 @@ export const translations = {
     catGround: 'Ground & Nature',
     catFabric: 'Fabric & Leather',
     catSciFi: 'Sci-Fi & Cyberpunk',
+    catOrnamental: 'Embossed & Ornaments',
     catOther: 'Other',
     
     // Properties Panel
