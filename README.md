@@ -41,8 +41,12 @@ An interactive, high-performance web-based **3D PBR (Physically Based Rendering)
 - **iPad Files App Integration**: Save alphas straight to `On My iPad > Nomad > alphas` or textures to `On My iPad > Nomad > textures`.
 
 ### 4. 📚 100% Free & Legal Open-Source Material Catalog
-- **56 Complete PBR Material Sets (270 Texture Maps)** across 11 rich categories:
-  - **Ornamental & Repujado (4 sets)**: Floral Tooled Leather (Cuero Repujado), Antique Pewter & Silver Plate (Estaño y Plata Repujada), Baroque Royal Gilded Bronze (Oro Barroco), Classical Ornamental Plaster Relief (Yeso y Estuco).
+- **59 Complete PBR Material Sets (288 Texture Maps)** across 11 rich categories:
+  - **Ornamental & Repujado (7 sets)**:
+    - *Trazo Fino Floral Cuero (Line Art Leather)*: Cuero limpio con detalle de trazo floral sutil y minimalista.
+    - *Trazo Fino Grabado Acero (Line Art Steel)*: Chapa de acero con filigrana floral fina grabada.
+    - *Trazo Fino Relieve Yeso (Line Art Plaster)*: Yeso blanco suave con relieve lineal floral delicado.
+    - *Cuero Repujado Tradicional, Estaño y Plata, Oro Barroco y Yeso Clásico*.
   - **Wood & Timber (11 sets)**: Oak Parquet, Rustic Planks, Herringbone Parquet, Natural Pine, Dark Walnut, Fine Mahogany, Diagonal Parquet, Forest Tree Bark, Clock Tower Wood Frames & Single Planks.
   - **Bricks & Masonry (10 sets)**: Red Clay Clean, Weathered Dark, Old Industrial Red Brick, European Cobblestone, Square Flagstone Patio, Fantasy Dungeon Flagstone, Clock Tower Replica Domes.
   - **Metals (6 sets)**: Brushed Steel Sheet, Diamond Plate Steel, Rusted Corroded Iron, Galvanized Zinc Steel, Gold Foil & Brass Plate.

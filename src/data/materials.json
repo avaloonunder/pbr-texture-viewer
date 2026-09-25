@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-25T11:40:12.476Z",
-  "totalMaterials": 56,
-  "totalFiles": 270,
+  "generatedAt": "2026-09-25T11:55:05.726Z",
+  "totalMaterials": 59,
+  "totalFiles": 288,
   "categories": [
     "Bricks & Masonry",
     "Fabric & Leather",
@@ -1032,6 +1032,75 @@
         "roughness": 656418
       },
       "totalSizeBytes": 10726514
+    },
+    {
+      "id": "Repujado_LineArt_LeatherFloral",
+      "name": "Trazo Fino Floral Cuero (Line Art Leather)",
+      "category": "Ornamental & Repujado",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/Repujado_LineArt_LeatherFloral_ambientOcclusion.png",
+        "basecolor": "assets/textures/Repujado_LineArt_LeatherFloral_basecolor.png",
+        "height": "assets/textures/Repujado_LineArt_LeatherFloral_height.png",
+        "metallic": "assets/textures/Repujado_LineArt_LeatherFloral_metallic.png",
+        "normal": "assets/textures/Repujado_LineArt_LeatherFloral_normal.png",
+        "roughness": "assets/textures/Repujado_LineArt_LeatherFloral_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1801708,
+        "basecolor": 5811379,
+        "height": 2499767,
+        "metallic": 4145,
+        "normal": 7410848,
+        "roughness": 1642270
+      },
+      "totalSizeBytes": 19170117
+    },
+    {
+      "id": "Repujado_LineArt_EngravedSteel",
+      "name": "Trazo Fino Grabado Acero (Line Art Steel)",
+      "category": "Ornamental & Repujado",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/Repujado_LineArt_EngravedSteel_ambientOcclusion.png",
+        "basecolor": "assets/textures/Repujado_LineArt_EngravedSteel_basecolor.png",
+        "height": "assets/textures/Repujado_LineArt_EngravedSteel_height.png",
+        "metallic": "assets/textures/Repujado_LineArt_EngravedSteel_metallic.png",
+        "normal": "assets/textures/Repujado_LineArt_EngravedSteel_normal.png",
+        "roughness": "assets/textures/Repujado_LineArt_EngravedSteel_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1728442,
+        "basecolor": 4962332,
+        "height": 2245313,
+        "metallic": 8534,
+        "normal": 6595359,
+        "roughness": 1593382
+      },
+      "totalSizeBytes": 17133362
+    },
+    {
+      "id": "Repujado_LineArt_PlasterFloral",
+      "name": "Trazo Fino Relieve Yeso (Line Art Plaster)",
+      "category": "Ornamental & Repujado",
+      "isTransparent": false,
+      "maps": {
+        "ambientOcclusion": "assets/textures/Repujado_LineArt_PlasterFloral_ambientOcclusion.png",
+        "basecolor": "assets/textures/Repujado_LineArt_PlasterFloral_basecolor.png",
+        "height": "assets/textures/Repujado_LineArt_PlasterFloral_height.png",
+        "metallic": "assets/textures/Repujado_LineArt_PlasterFloral_metallic.png",
+        "normal": "assets/textures/Repujado_LineArt_PlasterFloral_normal.png",
+        "roughness": "assets/textures/Repujado_LineArt_PlasterFloral_roughness.png"
+      },
+      "sizes": {
+        "ambientOcclusion": 1547317,
+        "basecolor": 4229939,
+        "height": 1892389,
+        "metallic": 4145,
+        "normal": 5752826,
+        "roughness": 1021758
+      },
+      "totalSizeBytes": 14448374
     },
     {
       "id": "EXTRA_Wood026",
